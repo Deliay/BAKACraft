@@ -41,7 +41,7 @@ public class WeaponLevel extends BAKAPlugin implements Listener {
         public final double getDamage(int level)
         {
             //exp(x/55)*2.2*7.5-8
-            return initial + Math.exp(level / 55) * level * 7.5 - 8 + level / 4;
+            return initial + Math.exp(level / 55) * value * 7.5 - 8 + level / 4;
             //return initial + Math.log(level) * value;
         }
     }
