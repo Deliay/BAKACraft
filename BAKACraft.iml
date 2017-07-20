@@ -11,17 +11,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Mods" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.spigotmc:spigot-api:1.8-R0.1-SNAPSHOT" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-lang:commons-lang:2.6" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: com.googlecode.json-simple:json-simple:1.1.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: junit:junit:4.10" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.hamcrest:hamcrest-core:1.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.guava:guava:17.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.avaje:ebean:2.8.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.persistence:persistence-api:1.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.yaml:snakeyaml:1.14" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: net.md-5:bungeecord-chat:1.8-SNAPSHOT" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.code.gson:gson:2.3.1" level="project" />
     <orderEntry type="module-library">
       <library name="Maven: com.remiliascarlet:BAKAScoreboard:1.0">
         <CLASSES>
@@ -35,6 +24,15 @@
       <library name="Maven: com.remiliascarlet:GroupManager:2.1.33">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/lib/GroupManager-2.1.33 (1.8 Stable Version).jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Maven: com.remiliascarlet:KCauldron:2.1.33">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
