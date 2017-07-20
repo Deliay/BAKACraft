@@ -18,7 +18,6 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapelessRecipe;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.java.JavaPlugin;
-import sun.applet.Main;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -382,9 +381,9 @@ public class WeaponLevel extends BAKAPlugin implements Listener {
         {
             EnemyMetadata enemyMetadata = (EnemyMetadata)entity.getMetadata(EnemyMetadata.ENEMY_META_FLAG).get(0);
             int baseExp;
-            if(enemyMetadata.hasSpecialExp())
+            if(enemyMetadata.hasPlayerExp())
             {
-                baseExp = enemyMetadata.getSpecialExp();
+                baseExp = enemyMetadata.getPlayerExp();
             }
             else
             {

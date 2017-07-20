@@ -10,10 +10,13 @@ import org.bukkit.plugin.Plugin;
  */
 public class EnemyMetadata implements MetadataValue {
 
+
     public final static String ENEMY_META_FLAG = "Enemy_Meta_data";
 
-    int level, health, baseExp;
+    int level, health, playerExp;
     boolean boolhasSpecialExp;
+    String dropName;
+    Enemy belong;
     public EnemyMetadata(int Level)
     {
         level = Level;
@@ -23,21 +26,34 @@ public class EnemyMetadata implements MetadataValue {
         boolhasSpecialExp = false;
     }
 
-    public EnemyMetadata(int Level, int SpecialBaseExp)
+    public EnemyMetadata(int Level, int SpecialPlayerExp)
     {
         level = Level;
         boolhasSpecialExp = true;
-        baseExp = SpecialBaseExp;
+        playerExp = SpecialPlayerExp;
     }
 
-    public boolean hasSpecialExp()
+    public String getDropName() {
+        return dropName;
+    }
+
+    public void setDropName(String dropName) {
+        this.dropName = dropName;
+    }
+
+    public void setParent(Enemy parent)
+    {
+        belong = parent;
+    }
+
+    public boolean hasPlayerExp()
     {
         return boolhasSpecialExp;
     }
 
-    public int getSpecialExp()
+    public int getPlayerExp()
     {
-        return baseExp;
+        return playerExp;
     }
 
     public int getDamage()

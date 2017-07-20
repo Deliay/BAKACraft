@@ -8,6 +8,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.CreatureSpawnEvent;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.material.MaterialData;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -87,6 +88,11 @@ public class EnemySpawner extends BAKAPlugin implements Listener
 
     }
 
+    public static final String COMBINE_LEVEL_MONSTER_NAME(String name, int level)
+    {
+        return "&2" + name + " &cLv." + level;
+    }
+
     private void onNatureSpawn(CreatureSpawnEvent event)
     {
         int level = Random.RandomRange(100);
@@ -116,7 +122,7 @@ public class EnemySpawner extends BAKAPlugin implements Listener
                 mob.setMetadata(EnemyMetadata.ENEMY_META_FLAG, meta);
                 mob.setMaxHealth(meta.getHealth());
                 mob.setHealth(meta.getHealth());
-                mob.setCustomName(Random.Colorilize("&2" + getChinese(mob.getType()) + " &cLv." + meta.getLevel()));
+                mob.setCustomName(Random.Colorilize(COMBINE_LEVEL_MONSTER_NAME(getChinese(mob.getType()),  meta.getLevel())));
                 break;
             case CREEPER:
                 meta  = new EnemyMetadata(level, 10);
@@ -124,7 +130,7 @@ public class EnemySpawner extends BAKAPlugin implements Listener
                 cp.setMaxHealth(40);
                 cp.setHealth(40);
                 cp.setMetadata(EnemyMetadata.ENEMY_META_FLAG, meta);
-                mob.setCustomName("苦力怕 Lv." + meta.getLevel());
+                mob.setCustomName(COMBINE_LEVEL_MONSTER_NAME("苦力怕", meta.getLevel()));
                 break;
             case ENDERMAN:
                 meta  = new EnemyMetadata(level, 20);
@@ -134,8 +140,8 @@ public class EnemySpawner extends BAKAPlugin implements Listener
                 {
                     em.setMaxHealth(70);
                     em.setHealth(70);
-                    em.setCarriedMaterial((new MaterialData(Material.BLAZE_ROD)));
-                    em.setCustomName("烈焰精华末影人 Lv." + meta.getLevel());
+                    em.getEquipment().setItemInHand(new ItemStack(Material.BLAZE_ROD));
+                    em.setCustomName(COMBINE_LEVEL_MONSTER_NAME("烈焰精华末影人", meta.getLevel()));
                 }
                 break;
         }
@@ -143,7 +149,6 @@ public class EnemySpawner extends BAKAPlugin implements Listener
 
     private void onPlugin(CreatureSpawnEvent event)
     {
-
     }
 
 }

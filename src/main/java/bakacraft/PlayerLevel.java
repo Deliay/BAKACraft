@@ -6,7 +6,6 @@ import bakacraft.WeaponSkills.Random;
 import bakalibs.CConfiger;
 import org.anjocaido.groupmanager.GroupManager;
 import org.anjocaido.groupmanager.events.GMUserEvent;
-import org.anjocaido.groupmanager.events.GroupManagerEventHandler;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
@@ -224,8 +223,8 @@ public class PlayerLevel extends BAKAPlugin implements Listener {
                 if (entity.hasMetadata(EnemyMetadata.ENEMY_META_FLAG)) {
                     EnemyMetadata enemyMetadata = (EnemyMetadata) entity.getMetadata(EnemyMetadata.ENEMY_META_FLAG).get(0);
                     int baseExp;
-                    if (enemyMetadata.hasSpecialExp()) {
-                        baseExp = enemyMetadata.getSpecialExp();
+                    if (enemyMetadata.hasPlayerExp()) {
+                        baseExp = enemyMetadata.getPlayerExp();
                     } else {
                         baseExp = WeaponLevel.EXP_TABLE.getExp(entity.getType());
                     }
