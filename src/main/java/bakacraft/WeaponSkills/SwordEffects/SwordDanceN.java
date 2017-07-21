@@ -23,7 +23,7 @@ public class SwordDanceN extends BaseSkill {
             count++;
             dmg += (dmg * 0.1 * count) - 1;
             ((LivingEntity) event.getEntity()).damage(1, null);
-            ((Player) event.getDamager()).sendRawMessage("幻影剑舞！附加伤害：" + dmg);
+            ((Player) event.getDamager()).sendRawMessage("幻影剑舞！附加伤害：" + String.format("%.2f", dmg));
 
         }
         if (ssr) {
@@ -32,7 +32,7 @@ public class SwordDanceN extends BaseSkill {
                 count++;
                 dmg += (dmg * 0.1 * count) - 1;
                 ((LivingEntity) event.getEntity()).damage(1, null);
-                ((Player) event.getDamager()).sendRawMessage("幻影剑舞！附加伤害：" + dmg);
+                ((Player) event.getDamager()).sendRawMessage("幻影剑舞！附加伤害：" + String.format("%.2f", dmg));
             }
         }
         event.setDamage(dmg);

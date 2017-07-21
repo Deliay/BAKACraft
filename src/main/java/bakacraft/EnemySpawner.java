@@ -1,8 +1,11 @@
 package bakacraft;
 
+import bakacraft.EnemySpawn.EnemyManager;
 import bakacraft.EnemySpawn.EnemyMetadata;
 import bakacraft.WeaponSkills.Random;
 import org.bukkit.Material;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.*;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -19,9 +22,12 @@ import static org.bukkit.event.EventPriority.MONITOR;
  */
 public class EnemySpawner extends BAKAPlugin implements Listener
 {
+    public static EnemyManager ENEMY_MANAGER;
+
     public EnemySpawner(JavaPlugin instance) {
         super(instance);
         getInstance().getServer().getPluginManager().registerEvents(this, instance);
+        ENEMY_MANAGER = new EnemyManager();
     }
 
     @EventHandler(priority = MONITOR)
@@ -125,7 +131,7 @@ public class EnemySpawner extends BAKAPlugin implements Listener
                 mob.setCustomName(Random.Colorilize(COMBINE_LEVEL_MONSTER_NAME(getChinese(mob.getType()),  meta.getLevel())));
                 break;
             case CREEPER:
-                meta  = new EnemyMetadata(level, 10);
+                meta  = new EnemyMetadata(level, 10, 10);
                 Creeper cp = (Creeper) mob;
                 cp.setMaxHealth(40);
                 cp.setHealth(40);
@@ -133,7 +139,7 @@ public class EnemySpawner extends BAKAPlugin implements Listener
                 mob.setCustomName(COMBINE_LEVEL_MONSTER_NAME("苦力怕", meta.getLevel()));
                 break;
             case ENDERMAN:
-                meta  = new EnemyMetadata(level, 20);
+                meta  = new EnemyMetadata(level, 20,20);
                 mob.setMetadata(EnemyMetadata.ENEMY_META_FLAG, meta);
                 Enderman em = (Enderman) mob;
                 if(Random.TestRandom(20))

@@ -11,6 +11,7 @@ import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.*;
 import org.bukkit.inventory.ItemStack;
 
+import java.util.LinkedList;
 import java.util.List;
 
 /*
@@ -32,21 +33,12 @@ public class Enemy {
     public int SpawnMaxDistance;
     public int SpawnMinDistance;
     public int DamageTick;
-    public LivingEntity monster;
+    public AsyncEnemySpawn AsyncSpawner;
     public String DropTable;
+    public String Name;
 
-    public boolean isMonsterSpawned()
-    {
-        return monster != null;
-    }
-
-    public LivingEntity getMonster() {
-        return monster;
-    }
-
-    public Enemy(ConfigurationSection section, EnemyMetadata metadata)
-    {
-        loadFormSettingSection(section, metadata);
+    public AsyncEnemySpawn getSpawner() {
+        return AsyncSpawner;
     }
 
     public Enemy(Enemy old)
@@ -65,10 +57,16 @@ public class Enemy {
         this.SpawnMinDistance = old.SpawnMinDistance;
         this.DamageTick = old.DamageTick;
         this.DropTable = old.DropTable;
-
+        this.Name = old.Name;
     }
 
-    public void loadFormSettingSection(ConfigurationSection section, EnemyMetadata meta)
+    public Enemy(String name, ConfigurationSection section)
+    {
+        Name = name;
+        loadFormSettingSection(section);
+    }
+
+    public void loadFormSettingSection(ConfigurationSection section)
     {
         Level = section.getInt("Level");
         CustomName = section.getString("CustomName");
@@ -78,7 +76,8 @@ public class Enemy {
         EnhancementExp = section.getDouble("EnhancementExp");
         Condition = new EnemySpawnCondition(section.getConfigurationSection("Condition"));
         RecoverSpeed = section.getInt("RecoverSpeed");
-        Metadata = meta;
+        PlayerExp = section.getInt("PlayerExp");
+        Metadata = new EnemyMetadata(Level, WeaponExp, PlayerExp);
         SpawnMaxDistance = section.getInt("SpawnMaxDistance");
         SpawnMinDistance = section.getInt("SpawnMinDistance");
         DamageTick = section.getInt("DamageTick");
@@ -87,19 +86,18 @@ public class Enemy {
         Metadata.setDropName(DropTable);
     }
 
-    public void applyTo(LivingEntity entity)
+    public LivingEntity applyTo(LivingEntity entity)
     {
-        monster = entity;
         Metadata.level = Level;
-        monster.setMetadata(EnemyMetadata.ENEMY_META_FLAG, Metadata);
-        monster.setCustomName(EnemySpawner.COMBINE_LEVEL_MONSTER_NAME(CustomName, Level));
-        monster.setCustomNameVisible(true);
-        monster.setMaxHealth(MaxHealth);
-        monster.setHealth(MaxHealth);
-        monster.setRemoveWhenFarAway(true);
-        monster.setMaximumNoDamageTicks(DamageTick);
+        entity.setMetadata(EnemyMetadata.ENEMY_META_FLAG, Metadata);
+        entity.setCustomName(EnemySpawner.COMBINE_LEVEL_MONSTER_NAME(CustomName, Level));
+        entity.setCustomNameVisible(true);
+        entity.setMaxHealth(MaxHealth);
+        entity.setHealth(MaxHealth);
+        entity.setRemoveWhenFarAway(true);
+        entity.setMaximumNoDamageTicks(DamageTick);
 
-
+        return entity;
     }
 
     public Enemy copy()
@@ -107,7 +105,7 @@ public class Enemy {
         return new Enemy(this);
     }
 
-    public boolean trySpawnToPlayer(Player player)
+    public LivingEntity trySpawnToPlayer(Player player)
     {
         if(Condition.checkSpawnCond(player))
         {
@@ -116,11 +114,16 @@ public class Enemy {
             int destZ = SpawnMinDistance + Random.RandomRange(SpawnMaxDistance - SpawnMinDistance);
             Location monster_loc = player_loc.add(destX, 0, destZ);
             monster_loc.setY(player.getWorld().getHumidity(monster_loc.getBlockX(), monster_loc.getBlockZ()));
-
-            applyTo((LivingEntity) player.getWorld().spawnEntity(monster_loc, Model));
-            return true;
+            return trySpawnToPlayer(player, monster_loc);
         }
-        return false;
+        return null;
     }
+
+    public LivingEntity trySpawnToPlayer(Player player, Location location)
+    {
+        return applyTo((LivingEntity) player.getWorld().spawnEntity(location, Model));
+    }
+
+
 
 }

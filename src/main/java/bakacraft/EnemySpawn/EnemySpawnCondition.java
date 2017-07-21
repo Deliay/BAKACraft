@@ -22,7 +22,7 @@ public class EnemySpawnCondition {
     public int SpawnMinHeight;
     public int RequirePlayerLevel;
 
-    public EnemySpawnCondition(ConfigurationSection section)
+    public EnemySpawnCondition(final ConfigurationSection section)
     {
         RequirePlayerLevel = section.getInt("RequirePlayerLevel");
         SpawnBiome = readBiomeList(section.getStringList("SpawnBiome"));
@@ -36,21 +36,21 @@ public class EnemySpawnCondition {
         SpawnMaxHeight = section.getInt("SpawnMaxHeight");
     }
 
-    public List<Biome> readBiomeList(List<String> list)
+    public List<Biome> readBiomeList(final List<String> list)
     {
         List<Biome> lst = new ArrayList<>();
         for (String i : list) lst.add(Biome.valueOf(i));
         return lst;
     }
 
-    public List<World.Environment> readEnvironmentList(List<String> list)
+    public List<World.Environment> readEnvironmentList(final List<String> list)
     {
         List<World.Environment> lst = new ArrayList<>();
         for (String i : list) lst.add(World.Environment.valueOf(i));
         return lst;
     }
 
-    public EnemySpawnCondition(EnemySpawnCondition old)
+    public EnemySpawnCondition(final EnemySpawnCondition old)
     {
         this.SpawnBiome = old.SpawnBiome;
         this.SpawnChance = old.SpawnChance;
@@ -64,7 +64,7 @@ public class EnemySpawnCondition {
         this.RequirePlayerLevel = old.RequirePlayerLevel;
     }
 
-    public boolean checkSpawnCond(Player player)
+    public boolean checkSpawnCond(final Player player)
     {
         World world = player.getWorld();
         Location loc = player.getLocation();
@@ -84,7 +84,7 @@ public class EnemySpawnCondition {
 
     }
 
-    public boolean isSpawnTime(long time)
+    public boolean isSpawnTime(final long time)
     {
         return time >= StartSpawnTime && time <= EndSpawnTime;
     }

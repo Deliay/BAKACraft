@@ -13,10 +13,11 @@ public class EnemyMetadata implements MetadataValue {
 
     public final static String ENEMY_META_FLAG = "Enemy_Meta_data";
 
-    int level, health, playerExp;
+    int level, health, weaponExp, playerExp;
     boolean boolhasSpecialExp;
     String dropName;
     Enemy belong;
+    EnemyDrops drops;
     public EnemyMetadata(int Level)
     {
         level = Level;
@@ -26,10 +27,11 @@ public class EnemyMetadata implements MetadataValue {
         boolhasSpecialExp = false;
     }
 
-    public EnemyMetadata(int Level, int SpecialPlayerExp)
+    public EnemyMetadata(int Level, int SpecialWeaponExp, int SpecialPlayerExp)
     {
         level = Level;
         boolhasSpecialExp = true;
+        weaponExp = SpecialWeaponExp;
         playerExp = SpecialPlayerExp;
     }
 
@@ -37,8 +39,13 @@ public class EnemyMetadata implements MetadataValue {
         return dropName;
     }
 
+    public EnemyDrops getDrops() {
+        return drops;
+    }
+
     public void setDropName(String dropName) {
         this.dropName = dropName;
+        drops = EnemyDrops.loadDrop(dropName);
     }
 
     public void setParent(Enemy parent)
@@ -46,13 +53,17 @@ public class EnemyMetadata implements MetadataValue {
         belong = parent;
     }
 
-    public boolean hasPlayerExp()
+    public boolean hasWeaponExp()
     {
         return boolhasSpecialExp;
     }
 
-    public int getPlayerExp()
+    public int getWeaponExp()
     {
+        return weaponExp;
+    }
+
+    public int getPlayerExp() {
         return playerExp;
     }
 
