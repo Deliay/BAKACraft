@@ -21,7 +21,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: com.remiliascarlet:GroupManager:2.1.33">
+      <library name="Maven: com.remiliascarlet:GroupManager:1.0">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/lib/GroupManager-2.1.33 (1.8 Stable Version).jar!/" />
         </CLASSES>
@@ -30,9 +30,18 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: com.remiliascarlet:KCauldron:2.1.33">
+      <library name="Maven: com.remiliascarlet:KCauldron:1.0">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Maven: com.remiliascarlet:ProtocolLib:1.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/ProtocolLib-3.3.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
