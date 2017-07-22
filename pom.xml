@@ -63,5 +63,14 @@
             <scope>system</scope>
             <systemPath>${basedir}/lib/ProtocolLib-3.3.1.jar</systemPath>
         </dependency>
+
+
+        <dependency>
+            <groupId>com.remiliascarlet</groupId>
+            <artifactId>CustomNPC</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/CustomNPCs_1.7.10d(21feb16).jar</systemPath>
+        </dependency>
     </dependencies>
 </project>

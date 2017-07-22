@@ -47,5 +47,14 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Maven: com.remiliascarlet:CustomNPC:1.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/CustomNPCs_1.7.10d(21feb16).jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
