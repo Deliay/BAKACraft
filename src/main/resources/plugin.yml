@@ -1,3 +1,6 @@
 name: BAKACraft
 main: bakacraft.BAKACraft
 version: 0.1
+commands:
+  enemy:
+    description: moderator monsters

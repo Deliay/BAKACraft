@@ -9,17 +9,20 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BAKACraft.iml" afterPath="$PROJECT_DIR$/BAKACraft.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bakacraft/BAKACraft.java" afterPath="$PROJECT_DIR$/src/main/java/bakacraft/BAKACraft.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/DropItem.java" afterPath="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/DropItem.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/Enemy.java" afterPath="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/Enemy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyDrops.java" afterPath="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyDrops.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyEventListener.java" afterPath="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyEventListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyManager.java" afterPath="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyMetadata.java" afterPath="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyMetadata.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemySpawnCondition.java" afterPath="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemySpawnCondition.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemySpawnScheduler.java" afterPath="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemySpawnScheduler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/SpawnCommand.java" afterPath="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/SpawnCommand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawner.java" afterPath="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawner.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bakacraft/PlayerLevel.java" afterPath="$PROJECT_DIR$/src/main/java/bakacraft/PlayerLevel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bakacraft/WeaponLevel.java" afterPath="$PROJECT_DIR$/src/main/java/bakacraft/WeaponLevel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/SwordEffects/SwordDanceN.java" afterPath="$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/SwordEffects/SwordDanceN.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/SwordEffects/OmnislashR.java" afterPath="$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/SwordEffects/OmnislashR.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,11 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EnemyDrops.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyDrops.java">
+      <file leaf-file-name="WeaponLevel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/WeaponLevel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="24" />
+            <state relative-caret-position="150">
+              <caret line="443" column="16" lean-forward="false" selection-start-line="443" selection-start-column="16" selection-end-line="443" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,109 +50,99 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AsyncEnemySpawn.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/AsyncEnemySpawn.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="39" column="55" lean-forward="false" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#871#872#0" expanded="true" />
-                <element signature="e#933#934#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EnemySpawnCondition.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemySpawnCondition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1040">
-              <caret line="71" column="11" lean-forward="false" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EnemyEventListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyEventListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="31" column="60" lean-forward="false" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Enemy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/Enemy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EnemyManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EnemySpawner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="158" column="0" lean-forward="true" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+            <state relative-caret-position="594">
+              <caret line="67" column="20" lean-forward="false" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpawnCommand.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/SpawnCommand.java">
+      <file leaf-file-name="ICommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/ICommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CraftEntity.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/craftbukkit/v1_7_R4/entity/CraftEntity.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="592" column="0" lean-forward="false" selection-start-line="592" selection-start-column="0" selection-end-line="592" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#321#322#0" expanded="true" />
-                <element signature="e#348#349#0" expanded="true" />
+                <element signature="e#24754#24755#0" expanded="true" />
+                <element signature="e#24796#24797#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EnemySpawnScheduler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemySpawnScheduler.java">
+      <file leaf-file-name="CraftZombie.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/craftbukkit/v1_7_R4/entity/CraftZombie.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="51" column="35" lean-forward="false" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+            <state relative-caret-position="150">
+              <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
+                <element signature="e#500#501#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DropItem.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/DropItem.java">
+      <file leaf-file-name="OmnislashR.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/SwordEffects/OmnislashR.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state relative-caret-position="270">
+              <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MetadataStoreBase.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/metadata/MetadataStoreBase.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntityMetadataStore.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/craftbukkit/v1_7_R4/metadata/EntityMetadataStore.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CraftServer.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/craftbukkit/v1_7_R4/CraftServer.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="1332" column="0" lean-forward="false" selection-start-line="1332" selection-start-column="0" selection-end-line="1332" selection-end-column="0" />
+              <folding>
+                <element signature="e#54763#54764#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerLevel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/PlayerLevel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="232" column="0" lean-forward="false" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -161,6 +154,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Singleton" />
         <option value="Class" />
       </list>
     </option>
@@ -170,6 +164,7 @@
       <find>addPotionEffect</find>
       <find>LivingEntity</find>
       <find>Biome</find>
+      <find>Command</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -178,12 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/bakaCraft/WeaponSkills/SwordEffects/ArdorArtistrySSR.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bakaCraft/WeaponSkills/SwordEffects/OmnislashR.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bakaCraft/WeaponSkills/BowEffects/ForzenN.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bakaCraft/WeaponSkills/BowEffects/ForceSR.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bakaCraft/WeaponSkills/BowEffects/ForceSSR.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bakaCraft/WeaponSkills/BowEffects/ForzenR.java" />
         <option value="$PROJECT_DIR$/src/main/java/bakaCraft/WeaponSkills/BowEffects/ForzenSR.java" />
         <option value="$PROJECT_DIR$/src/main/java/bakaCraft/WeaponSkills/BowEffects/ForzenSSR.java" />
         <option value="$PROJECT_DIR$/src/main/java/bakaCraft/WeaponSkills/BowEffects/PushArrowN.java" />
@@ -205,30 +194,36 @@
         <option value="$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/Skill.java" />
         <option value="$PROJECT_DIR$/src/main/java/CConfiger.java" />
         <option value="$PROJECT_DIR$/src/main/java/bakalibs/CConfiger.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bakacraft/BAKACraft.java" />
         <option value="$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/Axe.java" />
         <option value="$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/Sword.java" />
         <option value="$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/BowEffects/PushArrowN.java" />
         <option value="$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/Bow.java" />
         <option value="$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/AxeEffects/SoulWarN.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bakacraft/PlayerLevel.java" />
         <option value="$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/SwordEffects/DanceSwordSSR.java" />
         <option value="$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/SwordEffects/ArdorArtistryN.java" />
         <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyMetadata.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/SwordEffects/SwordDanceN.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/AsyncEnemySpawn.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/ISave.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyStoarge.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyStorage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/DropItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bakacraft/ICommand.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/bakacraft/BAKACraft.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemySpawnScheduler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bakacraft/PlayerLevel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyEventListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/SpawnCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemySpawnCondition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/Enemy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyDrops.java" />
         <option value="$PROJECT_DIR$/src/main/java/bakacraft/WeaponLevel.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/DropItem.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemySpawnCondition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyDrops.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyMetadata.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyEventListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/SwordEffects/SwordDanceN.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemySpawnScheduler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/Enemy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/AsyncEnemySpawn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/SpawnCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/SwordEffects/OmnislashR.java" />
       </list>
     </option>
   </component>
@@ -297,6 +292,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -341,30 +338,6 @@
             </path>
             <path>
               <item name="BAKACraft" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BAKACraft" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bakacraft" type="462c0819:PsiDirectoryNode" />
-              <item name="WeaponSkills" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BAKACraft" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BAKACraft" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bakalibs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BAKACraft" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BAKACraft" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BAKACraft" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -372,8 +345,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -603,28 +574,28 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328341" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22350231" sideWeight="0.47419354" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3857635" sideWeight="0.5387097" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14032258" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20852534" sideWeight="0.46451613" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32949308" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30414745" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2016129" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3419355" sideWeight="0.49375" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328341" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24193548" sideWeight="0.49375" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2983871" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3892078" sideWeight="0.46129033" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38824886" sideWeight="0.46129033" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25586355" sideWeight="0.50625" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295063" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295063" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -668,7 +639,7 @@
           <option name="timeStamp" value="262" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="361" />
+      <option name="time" value="459" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Remote">
@@ -693,6 +664,18 @@
         <watch expression="player.hasPermission(perm)" />
         <watch expression="hasType(meta.getLore())" />
         <watch expression="s.matches(&quot;.*\\[武器类型].*&quot;)" language="JAVA" />
+        <watch expression="entity.hasMetadata(EnemyMetadata.ENEMY_META_FLAG)" />
+        <watch expression="cause.getDamager() instanceof Player" />
+        <watch expression="SpawnBiome" />
+        <watch expression="SpawnBiome" />
+        <watch expression="SpawnBiome.contains(b)" />
+        <watch expression="b" />
+        <watch expression="b" language="JAVA" />
+        <watch expression="getExpByEntity(entityV, getType(lore)" />
+        <watch expression=" enemyMetadata.getWeaponExp()" />
+        <watch expression="Random.TestRandom(i.Chance)" />
+        <watch expression="getExpByEntity(entityV, getType(lore))" />
+        <watch expression="event.getEntity()" />
       </configuration>
     </watches-manager>
   </component>
@@ -701,45 +684,157 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/lib/GroupManager-2.1.33 (1.8 Stable Version).jar!/org/anjocaido/groupmanager/events/GMGroupEvent.class">
+    <entry file="jar://F:/Java/j8dk/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="120" column="8" lean-forward="false" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/ProtocolLib-3.3.1.jar!/com/comphenix/protocol/CommandFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1575">
+          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/ProtocolLib-3.3.1.jar!/com/comphenix/protocol/CommandBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-627">
+          <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/ProtocolLib-3.3.1.jar!/com/comphenix/protocol/CommandProtocol.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/GroupManager-2.1.33 (1.8 Stable Version).jar!/org/anjocaido/groupmanager/events/GMUserEvent.class">
+    <entry file="jar://$PROJECT_DIR$/lib/ProtocolLib-3.3.1.jar!/com/comphenix/protocol/ProtocolLibrary.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="125">
+          <caret line="357" column="17" lean-forward="false" selection-start-line="357" selection-start-column="17" selection-end-line="357" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/GroupManager-2.1.33 (1.8 Stable Version).jar!/org/anjocaido/groupmanager/GlobalGroups.class">
+    <entry file="jar://$PROJECT_DIR$/lib/ProtocolLib-3.3.1.jar!/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        <state relative-caret-position="57">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="12" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/GroupManager-2.1.33 (1.8 Stable Version).jar!/org/anjocaido/groupmanager/events/GroupManagerEventHandler.class">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="75">
+          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/GroupManager-2.1.33 (1.8 Stable Version).jar!/org/anjocaido/groupmanager/GroupManager.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/DeadLimiter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1941">
-          <caret line="2049" column="23" lean-forward="false" selection-start-line="2049" selection-start-column="23" selection-end-line="2049" selection-end-column="23" />
+        <state relative-caret-position="75">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.8-R0.1-SNAPSHOT/spigot-api-1.8-R0.1-20150227.224658-194-sources.jar!/org/bukkit/entity/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/BAKAPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2232">
-          <caret line="893" column="26" lean-forward="true" selection-start-line="892" selection-start-column="50" selection-end-line="893" selection-end-column="26" />
+        <state relative-caret-position="60">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/block/Biome.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/scheduler/BukkitRunnable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/plugin/java/JavaPlugin.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding>
+            <element signature="e#3917#3918#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/plugin/PluginDescriptionFile.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+          <folding>
+            <element signature="e#5998#5999#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/craftbukkit/v1_7_R4/scheduler/CraftTask.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding>
+            <element signature="e#1680#1681#0" expanded="true" />
+            <element signature="e#1718#1719#0" expanded="true" />
+            <element signature="e#1752#1753#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/craftbukkit/v1_7_R4/scheduler/CraftAsyncTask.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemySpawnScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="53" column="20" lean-forward="true" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/plugin/java/JavaPluginLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="338" column="0" lean-forward="false" selection-start-line="338" selection-start-column="0" selection-end-line="338" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/craftbukkit/v1_7_R4/entity/CraftLivingEntity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="396" column="0" lean-forward="false" selection-start-line="396" selection-start-column="0" selection-end-line="396" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -751,347 +846,306 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-    <entry file="file://$PROJECT_DIR$/.idea/libraries/Mods.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/dictionaries/admin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/SwordEffects/DanceSwordSSR.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="28" column="58" lean-forward="false" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/AxeEffects/CullingBladeR.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/AxeEffects/CullingBladeSR.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/AxeEffects/CullingBladeN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/AxeEffects/RotatedAxeN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemySpawner.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.8-R0.1-SNAPSHOT/spigot-api-1.8-R0.1-20150227.224658-194-sources.jar!/org/bukkit/entity/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="322" column="18" lean-forward="false" selection-start-line="322" selection-start-column="18" selection-end-line="322" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.8-R0.1-SNAPSHOT/spigot-api-1.8-R0.1-20150227.224658-194-sources.jar!/org/bukkit/entity/CreatureType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-747">
-          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.8-R0.1-SNAPSHOT/spigot-api-1.8-R0.1-20150227.224658-194-sources.jar!/org/bukkit/entity/EntityType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3224">
-          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.8-R0.1-SNAPSHOT/spigot-api-1.8-R0.1-20150227.224658-194-sources.jar!/org/bukkit/map/MapCanvas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-613">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.8-R0.1-SNAPSHOT/spigot-api-1.8-R0.1-20150227.224658-194-sources.jar!/org/bukkit/WorldType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.8-R0.1-SNAPSHOT/spigot-api-1.8-R0.1-20150227.224658-194-sources.jar!/org/bukkit/WorldCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.8-R0.1-SNAPSHOT/spigot-api-1.8-R0.1-20150227.224658-194-sources.jar!/org/bukkit/entity/Creature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.8-R0.1-SNAPSHOT/spigot-api-1.8-R0.1-20150227.224658-194-sources.jar!/org/bukkit/World.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="784" column="34" lean-forward="true" selection-start-line="784" selection-start-column="34" selection-end-line="784" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/CraftLimit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1425">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="268">
+          <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.8-R0.1-SNAPSHOT/spigot-api-1.8-R0.1-20150227.224658-194-sources.jar!/org/bukkit/scheduler/BukkitRunnable.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/Random.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-525">
-          <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="36" />
+        <state relative-caret-position="225">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.8-R0.1-SNAPSHOT/spigot-api-1.8-R0.1-20150227.224658-194-sources.jar!/org/bukkit/scheduler/BukkitScheduler.java">
+    <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/inventory/ItemStack.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="367" column="22" lean-forward="false" selection-start-line="367" selection-start-column="22" selection-end-line="367" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.8-R0.1-SNAPSHOT/spigot-api-1.8-R0.1-20150227.224658-194-sources.jar!/org/bukkit/entity/Damageable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1875">
-          <caret line="125" column="9" lean-forward="false" selection-start-line="125" selection-start-column="9" selection-end-line="125" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.8-R0.1-SNAPSHOT/spigot-api-1.8-R0.1-20150227.224658-194-sources.jar!/org/bukkit/entity/LivingEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="200" column="16" lean-forward="false" selection-start-line="200" selection-start-column="16" selection-end-line="200" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/BAKACraft.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="169">
+          <caret line="93" column="11" lean-forward="false" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/SpawnCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-696">
+          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#3405#3406#0" expanded="true" />
+            <element signature="e#3445#3446#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bakalibs/CConfiger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="29" column="11" lean-forward="false" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/configuration/file/FileConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="55" column="53" lean-forward="false" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
+        <state relative-caret-position="255">
+          <caret line="37" column="11" lean-forward="false" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://F:/Java/j8dk/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="211" column="28" lean-forward="false" selection-start-line="211" selection-start-column="28" selection-end-line="211" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/PlayerLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="225" column="38" lean-forward="false" selection-start-line="225" selection-start-column="38" selection-end-line="225" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/SwordEffects/ArdorArtistryN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="27" column="51" lean-forward="true" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/SwordEffects/OmnislashR.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/SwordEffects/StormSwordN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/SwordEffects/SwordDanceN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="38" column="50" lean-forward="true" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/WeaponLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="473" column="35" lean-forward="false" selection-start-line="473" selection-start-column="35" selection-end-line="473" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyMetadata.java">
+    <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/configuration/MemoryConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-          <folding>
-            <element signature="e#1028#1029#0" expanded="true" />
-            <element signature="e#1056#1057#0" expanded="true" />
-            <element signature="e#1452#1453#0" expanded="true" />
-            <element signature="e#1484#1485#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemySpawnCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
-          <caret line="71" column="11" lean-forward="false" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/command/Command.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2843">
-          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="158" column="0" lean-forward="true" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyDrops.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyEventListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="31" column="60" lean-forward="false" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemySpawnScheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="51" column="35" lean-forward="false" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/Enemy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/DropItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/configuration/file/YamlConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+          <folding>
+            <element signature="e#1219#1220#0" expanded="true" />
+            <element signature="e#1318#1319#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/configuration/ConfigurationOptions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#580#581#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/ISave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/BAKACraft.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="254">
+          <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/configuration/MemorySection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="905">
+          <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+          <folding>
+            <element signature="e#3153#3154#0" expanded="true" />
+            <element signature="e#3185#3186#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/AsyncEnemySpawn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="39" column="55" lean-forward="false" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
+        <state relative-caret-position="314">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemySpawnCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/SpawnCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="384">
+          <caret line="34" column="79" lean-forward="false" selection-start-line="34" selection-start-column="79" selection-end-line="34" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/World.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="214" column="20" lean-forward="true" selection-start-line="214" selection-start-column="20" selection-end-line="214" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/Enemy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="128" column="14" lean-forward="true" selection-start-line="128" selection-start-column="14" selection-end-line="128" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyDrops.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1212#1213#0" expanded="true" />
+            <element signature="e#1240#1241#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyEventListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/EnemySpawn/EnemyMetadata.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="e#1056#1057#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/PlayerLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="232" column="0" lean-forward="false" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/craftbukkit/v1_7_R4/CraftServer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="1332" column="0" lean-forward="false" selection-start-line="1332" selection-start-column="0" selection-end-line="1332" selection-end-column="0" />
+          <folding>
+            <element signature="e#54763#54764#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/craftbukkit/v1_7_R4/metadata/EntityMetadataStore.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/metadata/MetadataStoreBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/WeaponLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="443" column="16" lean-forward="false" selection-start-line="443" selection-start-column="16" selection-end-line="443" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="67" column="20" lean-forward="false" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/ICommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/craftbukkit/v1_7_R4/entity/CraftEntity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="592" column="0" lean-forward="false" selection-start-line="592" selection-start-column="0" selection-end-line="592" selection-end-column="0" />
+          <folding>
+            <element signature="e#24754#24755#0" expanded="true" />
+            <element signature="e#24796#24797#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/KCauldron-1.7.10-1614.201.jar!/org/bukkit/craftbukkit/v1_7_R4/entity/CraftZombie.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding>
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bakacraft/WeaponSkills/SwordEffects/OmnislashR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -18,8 +18,10 @@ import java.util.List;
 /**
  * Created by admin on 2017/7/16.
  */
-public class Enemy {
+public class Enemy
+{
     public int RecoverSpeed;
+    public int MoveSpeed;
     public int Level;
     public String CustomName;
     public double MaxHealth;
@@ -57,6 +59,7 @@ public class Enemy {
         this.SpawnMinDistance = old.SpawnMinDistance;
         this.DamageTick = old.DamageTick;
         this.DropTable = old.DropTable;
+        this.MoveSpeed = old.MoveSpeed;
         this.Name = old.Name;
     }
 
@@ -68,8 +71,9 @@ public class Enemy {
 
     public void loadFormSettingSection(ConfigurationSection section)
     {
+        MoveSpeed = section.getInt("MoveSpeed");
         Level = section.getInt("Level");
-        CustomName = section.getString("CustomName");
+        CustomName = Random.Colorilize(section.getString("CustomName"));
         MaxHealth = section.getDouble("MaxHealth");
         Model = EntityType.valueOf(section.getString("Model"));
         BaseDamage = section.getDouble("BaseDamage");
@@ -77,6 +81,7 @@ public class Enemy {
         Condition = new EnemySpawnCondition(section.getConfigurationSection("Condition"));
         RecoverSpeed = section.getInt("RecoverSpeed");
         PlayerExp = section.getInt("PlayerExp");
+        WeaponExp = section.getInt("WeaponExp");
         Metadata = new EnemyMetadata(Level, WeaponExp, PlayerExp);
         SpawnMaxDistance = section.getInt("SpawnMaxDistance");
         SpawnMinDistance = section.getInt("SpawnMinDistance");
@@ -90,7 +95,7 @@ public class Enemy {
     {
         Metadata.level = Level;
         entity.setMetadata(EnemyMetadata.ENEMY_META_FLAG, Metadata);
-        entity.setCustomName(EnemySpawner.COMBINE_LEVEL_MONSTER_NAME(CustomName, Level));
+        entity.setCustomName(Random.Colorilize(EnemySpawner.COMBINE_LEVEL_MONSTER_NAME(CustomName, Level)));
         entity.setCustomNameVisible(true);
         entity.setMaxHealth(MaxHealth);
         entity.setHealth(MaxHealth);
@@ -113,7 +118,7 @@ public class Enemy {
             int destX = SpawnMinDistance + Random.RandomRange(SpawnMaxDistance - SpawnMinDistance);
             int destZ = SpawnMinDistance + Random.RandomRange(SpawnMaxDistance - SpawnMinDistance);
             Location monster_loc = player_loc.add(destX, 0, destZ);
-            monster_loc.setY(player.getWorld().getHumidity(monster_loc.getBlockX(), monster_loc.getBlockZ()));
+            //monster_loc.setY(player.getWorld().getHumidity(monster_loc.getBlockX(), monster_loc.getBlockZ()));
             return trySpawnToPlayer(player, monster_loc);
         }
         return null;
@@ -123,7 +128,4 @@ public class Enemy {
     {
         return applyTo((LivingEntity) player.getWorld().spawnEntity(location, Model));
     }
-
-
-
 }

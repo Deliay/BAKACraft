@@ -11,7 +11,6 @@ public class EnemyManager
     public List<Enemy> enemiesCollection = new LinkedList<>();
 
     public static EnemySpawnScheduler SPAWN_SCHEDULER;
-    public static EnemyEventListener EVENT_LISTENER;
 
     public void joinEnemyToSpawnScheduler(Enemy enemy)
     {
@@ -21,16 +20,25 @@ public class EnemyManager
         }
     }
 
+    public Enemy findEnemy(String name)
+    {
+        for (Enemy e : enemiesCollection)
+        {
+            if(e.Name.equals(name)) return e;
+        }
+        return null;
+    }
+
     public EnemyManager()
     {
         SPAWN_SCHEDULER = new EnemySpawnScheduler(this);
         SPAWN_SCHEDULER.runTaskTimerAsynchronously(BAKACraft.instance, 20, 20);
-        EVENT_LISTENER = new EnemyEventListener(this);
-        BAKACraft.instance.getServer().getPluginManager().registerEvents(EVENT_LISTENER, BAKACraft.instance);
         CConfiger config = new CConfiger(BAKACraft.instance, "EnemyList.yml");
         for (String key : config.getKeys(false))
         {
             Enemy enemy = new Enemy(key, config.getConfigurationSection(key));
+            joinEnemyToSpawnScheduler(enemy);
+            enemiesCollection.add(enemy);
         }
     }
 

@@ -15,9 +15,12 @@ public class OmnislashR extends BaseSkill {
         Sword.injugdge.put((LivingEntity) event.getDamager(), null);
 
         double dmg = event.getDamage();
+        double resume_dmg = dmg * 0.75;
+        double step_dmp = resume_dmg / (2 * level);
         for (int i = 0; i < 2 * level; i++) {
-            dmg += 0.5;
-            ((LivingEntity) event.getEntity()).damage(dmg, event.getDamager());
+            resume_dmg += 0.5;
+            ((LivingEntity) event.getEntity()).damage(resume_dmg, event.getDamager());
+            resume_dmg -= step_dmp;
         }
 
         Sword.injugdge.remove(event.getDamager());

@@ -2,8 +2,12 @@ package bakacraft.EnemySpawn;
 
 import bakacraft.BAKACraft;
 import bakacraft.PlayerLevel;
+import bakacraft.WeaponSkills.Bow;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
+import org.bukkit.entity.Projectile;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDeathEvent;
@@ -19,15 +23,23 @@ public class EnemyEventListener implements Listener {
         this.manager = manager;
     }
 
+    @EventHandler
     public void onEntityDead(EntityDeathEvent event)
     {
         if (event.getEntity().getLastDamageCause() instanceof EntityDamageByEntityEvent) {
             EntityDamageByEntityEvent cause = (EntityDamageByEntityEvent) event.getEntity().getLastDamageCause();
             LivingEntity entity = EnemyManager.SPAWN_SCHEDULER.getLivingEntity(cause.getEntity().getUniqueId());
-            if(entity != null && entity.hasMetadata(EnemyMetadata.ENEMY_META_FLAG) && cause.getDamager() instanceof Player)
+            Entity Damager = cause.getDamager();
+            if (Damager instanceof Projectile)
+            {
+                Projectile projectile = (Projectile) cause.getDamager();
+                if(projectile.hasMetadata("Shooter"))
+                    Damager = ((Bow.MetaDataPlayer)(projectile.getMetadata("Shooter").get(0))).asPlayer();
+            }
+            if(entity != null && entity.hasMetadata(EnemyMetadata.ENEMY_META_FLAG) && Damager instanceof Player)
             {
                 //计算掉落、经验等
-                EnemyMetadata meta = (EnemyMetadata)entity.getMetadata(EnemyMetadata.ENEMY_META_FLAG);
+                EnemyMetadata meta = (EnemyMetadata)(entity.getMetadata(EnemyMetadata.ENEMY_META_FLAG).get(0));
                 Enemy enemy = meta.belong;
                 Player player = (Player) cause.getDamager();
                 event.setDroppedExp((int)enemy.EnhancementExp);
@@ -39,6 +51,7 @@ public class EnemyEventListener implements Listener {
                 {
                     player.getWorld().dropItem(entity.getLocation(), item);
                 }
+                entity.removeMetadata(EnemyMetadata.ENEMY_META_FLAG, BAKACraft.instance);
             }
         }
     }

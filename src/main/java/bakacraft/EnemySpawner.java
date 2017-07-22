@@ -1,10 +1,13 @@
 package bakacraft;
 
+import bakacraft.EnemySpawn.EnemyEventListener;
 import bakacraft.EnemySpawn.EnemyManager;
 import bakacraft.EnemySpawn.EnemyMetadata;
+import bakacraft.EnemySpawn.SpawnCommand;
 import bakacraft.WeaponSkills.Random;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.*;
 import org.bukkit.event.EventHandler;
@@ -23,11 +26,16 @@ import static org.bukkit.event.EventPriority.MONITOR;
 public class EnemySpawner extends BAKAPlugin implements Listener
 {
     public static EnemyManager ENEMY_MANAGER;
+    public static SpawnCommand SPAWN_COMMAND;
+    public static EnemyEventListener ENEMY_EVENTS;
 
     public EnemySpawner(JavaPlugin instance) {
         super(instance);
         getInstance().getServer().getPluginManager().registerEvents(this, instance);
         ENEMY_MANAGER = new EnemyManager();
+        SPAWN_COMMAND = new SpawnCommand();
+        ENEMY_EVENTS = new EnemyEventListener(ENEMY_MANAGER);
+        BAKACraft.instance.getServer().getPluginManager().registerEvents(ENEMY_EVENTS, BAKACraft.instance);
     }
 
     @EventHandler(priority = MONITOR)

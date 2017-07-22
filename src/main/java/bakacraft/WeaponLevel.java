@@ -143,10 +143,10 @@ public class WeaponLevel extends BAKAPlugin implements Listener {
             GROWN_TABLE.put("剑道雅客长剑", 1, 1.65, 5);
             GROWN_TABLE.put("剑道雅客长剑", 2, 1.675, 6);
             GROWN_TABLE.put("剑道雅客长剑", 3, 1.7, 6);
-            GROWN_TABLE.put("古卷之剑坎图沙", 0, 1.15, 2);
-            GROWN_TABLE.put("古卷之剑坎图沙", 1, 1.15, 2);
-            GROWN_TABLE.put("古卷之剑坎图沙", 2, 1.175, 3);
-            GROWN_TABLE.put("古卷之剑坎图沙", 3, 1.225, 3);
+            GROWN_TABLE.put("古卷之剑坎图沙", 0, 0.95, 2);
+            GROWN_TABLE.put("古卷之剑坎图沙", 1, 0.95, 2);
+            GROWN_TABLE.put("古卷之剑坎图沙", 2, 0.975, 3);
+            GROWN_TABLE.put("古卷之剑坎图沙", 3, 1.025, 3);
             GROWN_TABLE.put("剑道雅客长剑", 2, 1.95, 6);
             GROWN_TABLE.put("剑道雅客长剑", 3, 1.975, 7);
             GROWN_TABLE.put("炎铸大太刀", 0, 1.45, 4);
@@ -387,22 +387,22 @@ public class WeaponLevel extends BAKAPlugin implements Listener {
             }
             else
             {
-                baseExp = EXP_TABLE.getExp(entity.getType());
+                baseExp = (int)(Math.log(enemyMetadata.getLevel()) * EXP_TABLE.getExp(entity.getType()));
             }
 
-            int proMul = 0;
+            double proMul = 1.0;
             switch (type)
             {
                 case "斧":
                 break;
                 case "剑":
-                    proMul++;
+                    proMul+=0.2;
                     break;
                 case "弓":
-                    proMul++;
+                    proMul+=0.1;
                     break;
             }
-            return (int)Math.log(enemyMetadata.getLevel()) * (baseExp + proMul);
+            return (int)(baseExp * proMul);
 
         }
         else

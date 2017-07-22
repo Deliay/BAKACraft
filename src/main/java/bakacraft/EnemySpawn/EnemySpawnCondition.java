@@ -1,5 +1,6 @@
 package bakacraft.EnemySpawn;
 
+import bakacraft.WeaponSkills.Random;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.block.Biome;
@@ -8,7 +9,6 @@ import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class EnemySpawnCondition {
     public List<Biome> SpawnBiome;
@@ -21,9 +21,11 @@ public class EnemySpawnCondition {
     public int SpawnMaxHeight;
     public int SpawnMinHeight;
     public int RequirePlayerLevel;
+    private String path;
 
     public EnemySpawnCondition(final ConfigurationSection section)
     {
+        path = section.getCurrentPath();
         RequirePlayerLevel = section.getInt("RequirePlayerLevel");
         SpawnBiome = readBiomeList(section.getStringList("SpawnBiome"));
         SpawnEnvironment = readEnvironmentList(section.getStringList("SpawnEnvironment"));
@@ -66,6 +68,8 @@ public class EnemySpawnCondition {
 
     public boolean checkSpawnCond(final Player player)
     {
+        if(!Random.TestRandom(SpawnChance)) return false;
+
         World world = player.getWorld();
         Location loc = player.getLocation();
 
@@ -74,11 +78,33 @@ public class EnemySpawnCondition {
         int curLight = world.getBlockAt(loc).getLightLevel();
         int curHeight = loc.getBlockY();
         long curTime = world.getTime();
+        boolean flag = false;
 
-        if(!SpawnBiome.contains(b)) return false;
-        if(!SpawnEnvironment.contains(env)) return false;
-        if(!(SpawnMaxLightLevel < curLight && curLight < SpawnMinLightLevel)) return false;
-        if(!(SpawnMaxHeight < curHeight && curHeight < SpawnMinHeight)) return false;
+        for (Biome bio : SpawnBiome)
+        {
+            if(bio.equals(b))
+            {
+                flag = true;
+                break;
+            }
+        }
+
+        if(!flag) return false;
+
+
+        for (World.Environment e : SpawnEnvironment)
+        {
+            if(e.equals(env))
+            {
+                flag = true;
+                break;
+            }
+        }
+
+        if(!flag) return false;
+
+        if(!(SpawnMaxLightLevel > curLight && curLight > SpawnMinLightLevel)) return false;
+        if(!(SpawnMaxHeight > curHeight && curHeight > SpawnMinHeight)) return false;
 
         return isSpawnTime(curTime);
 

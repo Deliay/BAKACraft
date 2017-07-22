@@ -1,10 +1,16 @@
 package bakacraft;
 
 import bakacraft.WeaponSkills.Skill;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import pluginMain.BAKAScoreboard;
+
+import java.util.LinkedList;
+import java.util.List;
 
 public class BAKACraft extends JavaPlugin {
 
@@ -19,6 +25,8 @@ public class BAKACraft extends JavaPlugin {
     public final static String PERM_BASAKER = "BAKACraft.Basaker";
     public final static String PERM_SABER = "BAKACraft.Saber";
     public final static String PERM_ARCHER = "BAKACraft.Archer";
+
+    private final static List<ICommand> commands = new LinkedList<>();
 
     @Override
     public void onEnable() {
@@ -37,6 +45,20 @@ public class BAKACraft extends JavaPlugin {
         //玩家等级
         playerLevel = new PlayerLevel(this);
 
+    }
+
+    public final static void registerCommandDispatcher(ICommand cmd)
+    {
+        commands.add(cmd);
+    }
+
+    @Override
+    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        for (ICommand cmd : commands)
+        {
+            if(label.equals(cmd.getName())) return cmd.onCommand(sender, label, args);
+        }
+        return false;
     }
 
     public static final boolean CHECK_PLAYER_PERM(Entity entity, String perm)

@@ -51,7 +51,7 @@ public class EnemySpawnScheduler extends BukkitRunnable {
     public void run() {
         for (AsyncEnemySpawn e : spawnMap.values())
         {
-            e.runTaskAsynchronously(BAKACraft.instance);
+            e.run();
         }
     }
 }

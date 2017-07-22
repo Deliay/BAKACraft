@@ -224,7 +224,7 @@ public class PlayerLevel extends BAKAPlugin implements Listener {
                     EnemyMetadata enemyMetadata = (EnemyMetadata) entity.getMetadata(EnemyMetadata.ENEMY_META_FLAG).get(0);
                     int baseExp;
                     if (enemyMetadata.hasWeaponExp()) {
-                        baseExp = enemyMetadata.getWeaponExp();
+                        baseExp = enemyMetadata.getPlayerExp();
                     } else {
                         baseExp = WeaponLevel.EXP_TABLE.getExp(entity.getType());
                     }
