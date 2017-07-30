@@ -1,5 +1,7 @@
 package bakacraft.EnemySpawn;
 
+import bakacraft.BAKACraft;
+import bakacraft.PlayerLevel;
 import bakacraft.WeaponSkills.Random;
 import org.bukkit.Location;
 import org.bukkit.World;
@@ -21,13 +23,19 @@ public class EnemySpawnCondition {
     public int SpawnMaxHeight;
     public int SpawnMinHeight;
     public int RequirePlayerLevel;
+    public int MaxPlayerLevel;
+    public boolean RequireRain;
+    public boolean RequireBiome;
+    public boolean RequireEnvironment;
     private String path;
 
     public EnemySpawnCondition(final ConfigurationSection section)
     {
         path = section.getCurrentPath();
         RequirePlayerLevel = section.getInt("RequirePlayerLevel");
+        RequireBiome = section.getBoolean("RequireBiome");
         SpawnBiome = readBiomeList(section.getStringList("SpawnBiome"));
+        RequireEnvironment = section.getBoolean("RequireEnvironment");
         SpawnEnvironment = readEnvironmentList(section.getStringList("SpawnEnvironment"));
         SpawnChance = section.getInt("SpawnChance");
         SpawnMaxLightLevel = section.getInt("SpawnMaxLightLevel");
@@ -36,6 +44,8 @@ public class EnemySpawnCondition {
         EndSpawnTime = section.getLong("EndSpawnTime");
         SpawnMinHeight = section.getInt("SpawnMinHeight");
         SpawnMaxHeight = section.getInt("SpawnMaxHeight");
+        RequireRain = section.getBoolean("RequireRain");
+        MaxPlayerLevel = section.getInt("MaxPlayerLevel");
     }
 
     public List<Biome> readBiomeList(final List<String> list)
@@ -64,6 +74,9 @@ public class EnemySpawnCondition {
         this.SpawnMinHeight = old.SpawnMinHeight;
         this.SpawnMaxHeight = old.SpawnMaxHeight;
         this.RequirePlayerLevel = old.RequirePlayerLevel;
+        this.RequireRain = old.RequireRain;
+        this.RequireBiome = old.RequireBiome;
+        this.RequireEnvironment = old.RequireEnvironment;
     }
 
     public boolean checkSpawnCond(final Player player)
@@ -71,6 +84,12 @@ public class EnemySpawnCondition {
         if(!Random.TestRandom(SpawnChance)) return false;
 
         World world = player.getWorld();
+
+        int playerLevel = BAKACraft.playerLevel.getLevel(player);
+        if(!((playerLevel < MaxPlayerLevel) && (RequirePlayerLevel < playerLevel))) return false;
+
+        if(RequireRain && world.getWeatherDuration() <= 0)  return false;
+
         Location loc = player.getLocation();
 
         Biome b = world.getBiome(loc.getBlockX(), loc.getBlockZ());
@@ -78,26 +97,26 @@ public class EnemySpawnCondition {
         int curLight = world.getBlockAt(loc).getLightLevel();
         int curHeight = loc.getBlockY();
         long curTime = world.getTime();
-        boolean flag = false;
-
-        for (Biome bio : SpawnBiome)
-        {
-            if(bio.equals(b))
-            {
-                flag = true;
-                break;
+        boolean flag = true;
+        if(RequireBiome) {
+            flag = false;
+            for (Biome bio : SpawnBiome) {
+                if (bio.equals(b)) {
+                    flag = true;
+                    break;
+                }
             }
         }
 
         if(!flag) return false;
 
-
-        for (World.Environment e : SpawnEnvironment)
-        {
-            if(e.equals(env))
-            {
-                flag = true;
-                break;
+        if(RequireEnvironment) {
+            flag = false;
+            for (World.Environment e : SpawnEnvironment) {
+                if (e.equals(env)) {
+                    flag = true;
+                    break;
+                }
             }
         }
 

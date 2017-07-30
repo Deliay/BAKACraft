@@ -14,6 +14,7 @@ public class EnemyMetadata implements MetadataValue {
     public final static String ENEMY_META_FLAG = "Enemy_Meta_data";
 
     int level, health, weaponExp, playerExp;
+    double damage;
     boolean boolhasSpecialExp;
     String dropName;
     Enemy belong;
@@ -27,12 +28,13 @@ public class EnemyMetadata implements MetadataValue {
         boolhasSpecialExp = false;
     }
 
-    public EnemyMetadata(int Level, int SpecialWeaponExp, int SpecialPlayerExp)
+    public EnemyMetadata(int Level, int SpecialWeaponExp, int SpecialPlayerExp, double BaseDamage)
     {
         level = Level;
         boolhasSpecialExp = true;
         weaponExp = SpecialWeaponExp;
         playerExp = SpecialPlayerExp;
+        damage = BaseDamage;
     }
 
     public String getDropName() {
@@ -67,9 +69,12 @@ public class EnemyMetadata implements MetadataValue {
         return playerExp;
     }
 
-    public int getDamage()
+    public double getDamage()
     {
-        return (int)(level * 0.3);
+        if(boolhasSpecialExp)
+            return damage;
+        else
+            return (level * 0.3);
     }
 
     public int getLevel()

@@ -89,6 +89,9 @@ public class PlayerLevel extends BAKAPlugin implements Listener {
         if(gm.getWorldsHolder().getWorldData(p).getUser(p.getName()).getGroupName().contains("Saber")) return Type.SABER;
         if(gm.getWorldsHolder().getWorldData(p).getUser(p.getName()).getGroupName().contains("Archer")) return Type.ARCHER;
         if(gm.getWorldsHolder().getWorldData(p).getUser(p.getName()).getGroupName().contains("Basaker")) return Type.BASAKER;
+        if(p.hasPermission(BAKACraft.PERM_SABER)) return Type.SABER;
+        if(p.hasPermission(BAKACraft.PERM_ARCHER)) return Type.ARCHER;
+        if(p.hasPermission(BAKACraft.PERM_BASAKER)) return Type.BASAKER;
         return null;
     }
 
@@ -98,7 +101,10 @@ public class PlayerLevel extends BAKAPlugin implements Listener {
         p.setMaxHealth(20);
 
         p.setWalkSpeed(BASE_MOVE_SPEED);
-
+        if(t == null)
+        {
+            return;
+        }
         if (t.equals(Type.BASAKER)) {
             p.setWalkSpeed(BASAKER_MOVE_SPEED);
             p.setMaxHealth(p.getMaxHealth() + getLevel(p) * BASAKER_PER_LEVEL_HEALTH);
@@ -185,7 +191,6 @@ public class PlayerLevel extends BAKAPlugin implements Listener {
     @EventHandler
     public void onPlayerRespawn(PlayerRespawnEvent event)
     {
-
         resetPlayer(event.getPlayer());
     }
 

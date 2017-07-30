@@ -139,7 +139,7 @@ public class EnemySpawner extends BAKAPlugin implements Listener
                 mob.setCustomName(Random.Colorilize(COMBINE_LEVEL_MONSTER_NAME(getChinese(mob.getType()),  meta.getLevel())));
                 break;
             case CREEPER:
-                meta  = new EnemyMetadata(level, 10, 10);
+                meta  = new EnemyMetadata(level, 10, 10, 0);
                 Creeper cp = (Creeper) mob;
                 cp.setMaxHealth(40);
                 cp.setHealth(40);
@@ -147,7 +147,7 @@ public class EnemySpawner extends BAKAPlugin implements Listener
                 mob.setCustomName(COMBINE_LEVEL_MONSTER_NAME("苦力怕", meta.getLevel()));
                 break;
             case ENDERMAN:
-                meta  = new EnemyMetadata(level, 20,20);
+                meta  = new EnemyMetadata(level, 20,20, 4);
                 mob.setMetadata(EnemyMetadata.ENEMY_META_FLAG, meta);
                 Enderman em = (Enderman) mob;
                 if(Random.TestRandom(20))

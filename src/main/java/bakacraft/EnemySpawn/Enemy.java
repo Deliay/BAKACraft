@@ -82,7 +82,7 @@ public class Enemy
         RecoverSpeed = section.getInt("RecoverSpeed");
         PlayerExp = section.getInt("PlayerExp");
         WeaponExp = section.getInt("WeaponExp");
-        Metadata = new EnemyMetadata(Level, WeaponExp, PlayerExp);
+        Metadata = new EnemyMetadata(Level, WeaponExp, PlayerExp, BaseDamage);
         SpawnMaxDistance = section.getInt("SpawnMaxDistance");
         SpawnMinDistance = section.getInt("SpawnMinDistance");
         DamageTick = section.getInt("DamageTick");
@@ -101,7 +101,6 @@ public class Enemy
         entity.setHealth(MaxHealth);
         entity.setRemoveWhenFarAway(true);
         entity.setMaximumNoDamageTicks(DamageTick);
-
         return entity;
     }
 

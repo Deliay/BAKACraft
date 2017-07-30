@@ -55,4 +55,17 @@ public class EnemyEventListener implements Listener {
             }
         }
     }
+
+    @EventHandler
+    public void onEntityDamage(EntityDamageByEntityEvent event)
+    {
+        if(event.getDamager().hasMetadata(EnemyMetadata.ENEMY_META_FLAG))
+        {
+            EnemyMetadata meta = (EnemyMetadata)(event.getDamager().getMetadata(EnemyMetadata.ENEMY_META_FLAG).get(0));
+            if(meta.hasWeaponExp())
+            {
+                event.setDamage(meta.getDamage());
+            }
+        }
+    }
 }
