@@ -147,8 +147,8 @@ public class WeaponLevel extends BAKAPlugin implements Listener {
             GROWN_TABLE.put("古卷之剑坎图沙", 1, 0.95, 2);
             GROWN_TABLE.put("古卷之剑坎图沙", 2, 0.975, 3);
             GROWN_TABLE.put("古卷之剑坎图沙", 3, 1.025, 3);
-            GROWN_TABLE.put("剑道雅客长剑", 2, 1.95, 6);
-            GROWN_TABLE.put("剑道雅客长剑", 3, 1.975, 7);
+            GROWN_TABLE.put("无穷神力之刃", 2, 1.95, 6);
+            GROWN_TABLE.put("无穷神力之刃", 3, 1.975, 7);
             GROWN_TABLE.put("炎铸大太刀", 0, 1.45, 4);
             GROWN_TABLE.put("炎铸大太刀", 1, 1.55, 4);
             GROWN_TABLE.put("炎铸大太刀", 2, 1.675, 5);
@@ -298,7 +298,7 @@ public class WeaponLevel extends BAKAPlugin implements Listener {
 
     public  final static int getNextLevelExp(int level)
     {
-        return (int)Math.pow(level + 14, 1.45) - 30;
+        return (int)Math.pow(level + 14, 1.50) - 30;
     }
 
     public  final static List<String> setExp(List<String> lore, int exp)
